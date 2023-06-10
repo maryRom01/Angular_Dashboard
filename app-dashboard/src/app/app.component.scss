@@ -1,0 +1,18 @@
+$w-main: 100%;
+
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.fxel-nav {
+  width: 20%;
+}
+
+.fxel-main {
+  width: 80%;
+}
+
+.w-main {
+  width: $w-main;
+}
