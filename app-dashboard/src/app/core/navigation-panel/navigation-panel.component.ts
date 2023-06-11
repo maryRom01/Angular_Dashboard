@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation-panel.component.scss']
 })
 export class NavigationPanelComponent {
+  navLinks: any[] = ['Dashboard', 'Components', 'Tables', 'Maps', 'Menu Level 1']
 
 }

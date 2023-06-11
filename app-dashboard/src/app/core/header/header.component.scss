@@ -1,0 +1,9 @@
+$color-black: rgba(47, 47, 54);
+
+header {
+  width: 100%;
+  height: 54px;
+  background-color: $color-black;
+  border: $color-black solid;
+  display: block;
+}

@@ -1,0 +1,21 @@
+$color-strong-grey: rgba(72, 72, 74);
+$height-600: 600px;
+
+.left-nav-bar {
+  width: 100%;
+  min-height: $height-600;
+  background-color: $color-strong-grey;
+  border: $color-strong-grey solid;
+  display: block;
+}
+
+.nav-bar-list {
+  list-style: none;
+  padding-left: 2em;
+  margin-top: 2em;
+}
+
+.nav-bar-list-item {
+  margin-bottom: 1.5em;
+  color: white;
+}
