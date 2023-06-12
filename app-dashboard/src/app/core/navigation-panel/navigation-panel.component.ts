@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation-panel.component.scss']
 })
 export class NavigationPanelComponent {
+  showSubMenu: boolean = false;
   menuLevelSubLinks: any[] = [
     {name: 'Menu Level 1.1'},
     {name: 'Menu Level 1.2'},

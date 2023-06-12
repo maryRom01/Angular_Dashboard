@@ -2,8 +2,18 @@
   <div class="left-nav-bar">
     <ul class="nav-bar-list" *ngFor="let item of navLinks">
       <li class="nav-bar-list-item">
-        <a></a>
-        <span>{{item.name}}</span>
+        <div class="nav-bar-list-item container">
+          <a></a>
+          <span class="list-item-container">{{item.name}}</span>
+          <span *ngIf="item.subMenu===true">
+            x
+          </span>
+          <div *ngIf="item.subMenu===true" class="nav-bar-sub-list">
+            <div *ngFor="let subitem of item.options">
+              <span class="nav-bar-list-sub-item">{{subitem.name}}</span>
+            </div>
+          </div>
+        </div>
       </li>
     </ul>
   </div>
