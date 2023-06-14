@@ -7,17 +7,16 @@ import { Component } from '@angular/core';
 })
 export class NavigationPanelComponent {
   showSubMenu: boolean = false;
-  menuLevelSubLinks: any[] = [
-    {name: 'Menu Level 1.1'},
-    {name: 'Menu Level 1.2'},
-    {name: 'Menu Level 1.3'}
-  ]
   navLinks: any[] = [
-    {name: 'Dashboard', subMenu: false},
-    {name: 'Components', subMenu: false},
-    {name: 'Tables', subMenu: false},
-    {name: 'Maps', subMenu: false},
-    {name: 'Menu Level 1', subMenu: true, options: this.menuLevelSubLinks}
+    {name: 'Dashboard', path: '/dashboard', subMenu: false},
+    {name: 'Components', path: '/components', subMenu: false},
+    {name: 'Tables', path: '/tables', subMenu: false},
+    {name: 'Maps', path: '/maps', subMenu: false},
+    {name: 'Menu Level 1', subMenu: true, options: [
+      {name: 'Menu Level 1.1', path: '/menu-level11'},
+      {name: 'Menu Level 1.2', path: '/menu-level12'},
+      {name: 'Menu Level 1.3', path: '/menu-level13'}
+    ]}
   ];
 
 }

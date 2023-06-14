@@ -1,6 +1,7 @@
 $color-strong-grey: rgba(72, 72, 74);
 $height-600: 600px;
 $margin-1_5em: 1.5em;
+$color-white: white;
 
 .left-nav-bar {
   width: 100%;
@@ -18,11 +19,11 @@ $margin-1_5em: 1.5em;
 
 .nav-bar-list-item {
   margin-bottom: $margin-1_5em;
-  color: white;
+  color: $color-white;
 }
 
-.list-item-container {
-  margin-right: $margin-1_5em;
+a {
+  color: $color-white;
 }
 
 .nav-bar-list-sub-item {
