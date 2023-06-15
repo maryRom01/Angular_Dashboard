@@ -14,6 +14,7 @@ import { MenuLevel11Component } from './components/menu-level/menu-level11/menu-
 import { MenuLevel12Component } from './components/menu-level/menu-level12/menu-level12.component';
 import { MenuLevel13Component } from './components/menu-level/menu-level13/menu-level13.component';
 import { MapsComponent } from './components/maps/maps/maps.component';
+import { MenuLevelComponent } from './components/menu-level/menu-level.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MapsComponent } from './components/maps/maps/maps.component';
     MenuLevel11Component,
     MenuLevel12Component,
     MenuLevel13Component,
-    MapsComponent
+    MapsComponent,
+    MenuLevelComponent
   ],
   imports: [
     BrowserModule,

@@ -5,12 +5,20 @@
         <div class="nav-bar-list-item container">
           <a class="list-item-container" [routerLink]="item.path">{{item.name}}</a>
           <span class="list-item-container"></span>
-          <span *ngIf="item.subMenu===true">
-            x
+          <span *ngIf="item.subMenu===true" (click)="showChildren()">
+            X
           </span>
+          <!-- variant 1 - no children in routing
           <div *ngIf="item.subMenu===true" class="nav-bar-sub-list">
             <div *ngFor="let subitem of item.options">
               <a class="nav-bar-list-sub-item" [routerLink]="subitem.path">{{subitem.name}}</a>
+            </div>
+          </div> -->
+
+          <!-- variant 2 - works inproperly, nav is displayed second time after click -->
+          <div div *ngIf="item.subMenu===true">
+            <div *ngIf="visible">
+              <dsh-menu-level></dsh-menu-level>
             </div>
           </div>
         </div>

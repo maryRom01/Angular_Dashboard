@@ -6,17 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation-panel.component.scss']
 })
 export class NavigationPanelComponent {
+  visible: boolean = false;
   showSubMenu: boolean = false;
   navLinks: any[] = [
     {name: 'Dashboard', path: '/dashboard', subMenu: false},
     {name: 'Components', path: '/components', subMenu: false},
     {name: 'Tables', path: '/tables', subMenu: false},
     {name: 'Maps', path: '/maps', subMenu: false},
-    {name: 'Menu Level 1', subMenu: true, options: [
-      {name: 'Menu Level 1.1', path: '/menu-level11'},
-      {name: 'Menu Level 1.2', path: '/menu-level12'},
-      {name: 'Menu Level 1.3', path: '/menu-level13'}
-    ]}
+    {name: 'Menu level 1', path: '/menu-level1', subMenu: true}
   ];
 
+  showChildren() {
+    return this.visible = !this.visible;
+  }
 }
