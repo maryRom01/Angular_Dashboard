@@ -15,6 +15,7 @@ import { MenuLevel12Component } from './components/menu-level/menu-level12/menu-
 import { MenuLevel13Component } from './components/menu-level/menu-level13/menu-level13.component';
 import { MapsComponent } from './components/maps/maps/maps.component';
 import { MenuLevelComponent } from './components/menu-level/menu-level.component';
+import { FallbackComponent } from './core/fallback/fallback.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MenuLevelComponent } from './components/menu-level/menu-level.component
     MenuLevel12Component,
     MenuLevel13Component,
     MapsComponent,
-    MenuLevelComponent
+    MenuLevelComponent,
+    FallbackComponent
   ],
   imports: [
     BrowserModule,
