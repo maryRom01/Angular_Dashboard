@@ -11,7 +11,6 @@ import { MenuLevelComponent } from './components/menu-level/menu-level.component
 import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
   {path: 'dashboard', component: DashboardComponent},
   {path: 'components', component: ComponentsUiComponent},
   {path: 'tables', component: TablesComponent},
@@ -22,7 +21,7 @@ const routes: Routes = [
     {path: 'menu-level12', component: MenuLevel12Component},
     {path: 'menu-level13', component: MenuLevel13Component}
   ]},
-  {path: '', component: DashboardComponent},
+  {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent}
 ];
 
