@@ -1,8 +1,6 @@
 <nav>
-  <ul class="nav-bar-sub-list">
-    <li><a routerLink="menu-level11">Menu Level 1.1</a></li>
-    <li><a routerLink="menu-level12">Menu Level 1.2</a></li>
-    <li><a routerLink="menu-level13">Menu Level 1.3</a></li>
+  <ul class="nav-bar-sub-list" *ngFor="let subLink of subLinks">
+    <li><a routerLink={{subLink.path}}>{{subLink.name}}</a></li>
   </ul>
 </nav>
 

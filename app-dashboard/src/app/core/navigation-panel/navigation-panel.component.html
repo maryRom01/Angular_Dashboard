@@ -1,12 +1,8 @@
 <nav>
   <div class="left-nav-bar">
     <ul class="nav-bar-list">
-        <div class="nav-bar-list-item container">
-          <li class="nav-bar-list-item"><a class="list-item-container" routerLink="dashboard">Dashboard</a></li>
-          <li class="nav-bar-list-item"><a class="list-item-container" routerLink="components">Components</a></li>
-          <li class="nav-bar-list-item"><a class="list-item-container" routerLink="tables">Tables</a></li>
-          <li class="nav-bar-list-item"><a class="list-item-container" routerLink="maps">Maps</a></li>
-          <li class="nav-bar-list-item"><a class="list-item-container" routerLink="menu-level1">Menu Level 1</a></li>
+        <div class="nav-bar-list-item container" *ngFor="let navLink of navLinks">
+          <li class="nav-bar-list-item"><a class="list-item-container" routerLink={{navLink.path}}>{{navLink.name}}</a></li>
         </div>
     </ul>
   </div>
