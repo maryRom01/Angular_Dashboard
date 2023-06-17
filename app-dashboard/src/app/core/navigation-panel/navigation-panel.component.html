@@ -1,20 +1,15 @@
 <nav>
   <div class="left-nav-bar">
-    <ul class="nav-bar-list" *ngFor="let item of navLinks">
-      <li class="nav-bar-list-item">
+    <ul class="nav-bar-list">
         <div class="nav-bar-list-item container">
-          <a class="list-item-container" [routerLink]="item.path">{{item.name}}</a>
-          <span class="list-item-container"></span>
-          <span *ngIf="item.subMenu===true" (click)="showChildren()">
-            X
-          </span>
-          <div *ngIf="item.subMenu===true">
-            <div *ngIf="visible">
-              <dsh-menu-level></dsh-menu-level>
-            </div>
-          </div>
+          <li class="nav-bar-list-item"><a class="list-item-container" routerLink="dashboard">Dashboard</a></li>
+          <li class="nav-bar-list-item"><a class="list-item-container" routerLink="components">Components</a></li>
+          <li class="nav-bar-list-item"><a class="list-item-container" routerLink="tables">Tables</a></li>
+          <li class="nav-bar-list-item"><a class="list-item-container" routerLink="maps">Maps</a></li>
+          <li class="nav-bar-list-item"><a class="list-item-container" routerLink="menu-level1">Menu Level 1</a></li>
         </div>
-      </li>
     </ul>
   </div>
 </nav>
+
+<router-outlet></router-outlet>
