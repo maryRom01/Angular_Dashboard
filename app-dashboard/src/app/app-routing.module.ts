@@ -8,11 +8,10 @@ import { MenuLevel11Component } from './components/menu-level/menu-level11/menu-
 import { MenuLevel12Component } from './components/menu-level/menu-level12/menu-level12.component';
 import { MenuLevel13Component } from './components/menu-level/menu-level13/menu-level13.component';
 import { MenuLevelComponent } from './components/menu-level/menu-level.component';
-import { MainContentComponent } from './core/main-content/main-content.component';
 import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  {path: '', component: MainContentComponent},
+  {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
   {path: 'dashboard', component: DashboardComponent},
   {path: 'components', component: ComponentsUiComponent},
   {path: 'tables', component: TablesComponent},

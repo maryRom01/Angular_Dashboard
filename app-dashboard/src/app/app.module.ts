@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { HeaderComponent } from './core/header/header.component';
 import { NavigationPanelComponent } from './core/navigation-panel/navigation-panel.component';
-import { MainContentComponent } from './core/main-content/main-content.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { TablesComponent } from './components/tables/tables.component';
 import { ComponentsUiComponent } from './components/components-ui/components-ui.component';
@@ -23,7 +22,6 @@ import { PageNotFoundComponent } from './core/page-not-found/page-not-found.comp
     FooterComponent,
     HeaderComponent,
     NavigationPanelComponent,
-    MainContentComponent,
     DashboardComponent,
     TablesComponent,
     ComponentsUiComponent,
