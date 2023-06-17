@@ -16,12 +16,11 @@ const routes: Routes = [
   {path: 'tables', component: TablesComponent},
   {path: 'maps', component: MapsComponent},
   {path: 'menu-level1', component: MenuLevelComponent, children: [
-    {path: '', component: MenuLevelComponent},
     {path: 'menu-level11', component: MenuLevel11Component},
     {path: 'menu-level12', component: MenuLevel12Component},
     {path: 'menu-level13', component: MenuLevel13Component}
   ]},
-  {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+  {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent}
 ];
 
