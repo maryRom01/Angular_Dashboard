@@ -9,14 +9,11 @@ export class NavigationPanelComponent {
   visible: boolean = false;
   showSubMenu: boolean = false;
   navLinks: any[] = [
-    {name: 'Dashboard', path: '/dashboard', subMenu: false},
-    {name: 'Components', path: '/components', subMenu: false},
-    {name: 'Tables', path: '/tables', subMenu: false},
-    {name: 'Maps', path: '/maps', subMenu: false},
-    {name: 'Menu level 1', path: '/menu-level1', subMenu: true}
+    {name: 'Dashboard', path: '/dashboard'},
+    {name: 'Components', path: '/components'},
+    {name: 'Tables', path: '/tables'},
+    {name: 'Maps', path: '/maps'},
+    {name: 'Menu level 1', path: '/menu-level1'}
   ];
 
-  showChildren() {
-    return this.visible = !this.visible;
-  }
 }
