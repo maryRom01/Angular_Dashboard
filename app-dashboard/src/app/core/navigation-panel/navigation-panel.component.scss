@@ -29,3 +29,17 @@ a {
 .nav-bar-list-sub-item {
   font-size: smaller;
 }
+
+.nav-bar-sub-list
+ {
+  list-style: none;
+ }
+
+ .nav-sub-link {
+  font-size: smaller;
+  margin-bottom: $margin-1_5em;
+ }
+
+ .list-item-img {
+  margin-left: $margin-1_5em;
+ }

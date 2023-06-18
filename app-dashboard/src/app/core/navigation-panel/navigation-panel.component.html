@@ -2,7 +2,14 @@
   <div class="left-nav-bar">
     <ul class="nav-bar-list">
         <div class="nav-bar-list-item container" *ngFor="let navLink of navLinks">
-          <li class="nav-bar-list-item"><a class="list-item-container" routerLink={{navLink.path}}>{{navLink.name}}</a></li>
+          <li class="nav-bar-list-item"><a class="list-item-container" routerLink={{navLink.path}} *ngIf="!navLink.subMenu">{{navLink.name}}</a></li>
+          <li class="nav-bar-list-item"><span class="list-item-container" *ngIf="navLink.subMenu">{{navLink.name}}
+            <span class="list-item-img" (click)="visible = !visible">X</span></span></li>
+          <nav *ngIf="visible">
+            <ul class="nav-bar-sub-list" *ngFor="let subLink of navLink.subLinks">
+              <li class="nav-sub-link"><a routerLink={{subLink.path}}>{{subLink.name}}</a></li>
+            </ul>
+          </nav>
         </div>
     </ul>
   </div>

@@ -9,11 +9,10 @@ import { NavigationPanelComponent } from './core/navigation-panel/navigation-pan
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { TablesComponent } from './components/tables/tables.component';
 import { ComponentsUiComponent } from './components/components-ui/components-ui.component';
-import { MenuLevel11Component } from './components/menu-level/menu-level11/menu-level11.component';
-import { MenuLevel12Component } from './components/menu-level/menu-level12/menu-level12.component';
-import { MenuLevel13Component } from './components/menu-level/menu-level13/menu-level13.component';
+import { MenuLevel11Component } from './core/navigation-panel/menu-level11/menu-level11.component';
+import { MenuLevel12Component } from './core/navigation-panel/menu-level12/menu-level12.component';
+import { MenuLevel13Component } from './core/navigation-panel/menu-level13/menu-level13.component';
 import { MapsComponent } from './components/maps/maps/maps.component';
-import { MenuLevelComponent } from './components/menu-level/menu-level.component';
 import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
 
 @NgModule({
@@ -29,7 +28,6 @@ import { PageNotFoundComponent } from './core/page-not-found/page-not-found.comp
     MenuLevel12Component,
     MenuLevel13Component,
     MapsComponent,
-    MenuLevelComponent,
     PageNotFoundComponent
   ],
   imports: [
