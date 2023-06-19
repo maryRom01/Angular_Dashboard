@@ -8,19 +8,21 @@ import { MenuLevel11Component } from './core/navigation-panel/menu-level11/menu-
 import { MenuLevel12Component } from './core/navigation-panel/menu-level12/menu-level12.component';
 import { MenuLevel13Component } from './core/navigation-panel/menu-level13/menu-level13.component';
 import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
+import { MainPageComponent } from './components/main-page/main-page.component';
 
 const routes: Routes = [
-  {path: 'dashboard', component: DashboardComponent},
-  {path: 'components', component: ComponentsUiComponent},
-  {path: 'tables', component: TablesComponent},
-  {path: 'maps', component: MapsComponent},
-  {path: '', children: [
-    {path: 'menu-level11', component: MenuLevel11Component},
-    {path: 'menu-level12', component: MenuLevel12Component},
-    {path: 'menu-level13', component: MenuLevel13Component}
+  { path: 'main-page', component: MainPageComponent},
+  { path: 'dashboard', component: DashboardComponent},
+  { path: 'components', component: ComponentsUiComponent },
+  { path: 'tables', component: TablesComponent },
+  { path: 'maps', component: MapsComponent },
+  { path: '', children: [
+    { path: 'menu-level11', component: MenuLevel11Component },
+    { path: 'menu-level12', component: MenuLevel12Component },
+    { path: 'menu-level13', component: MenuLevel13Component }
   ]},
-  {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
-  {path: '**', component: PageNotFoundComponent}
+  { path: '', redirectTo: '/main-page', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

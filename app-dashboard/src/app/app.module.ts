@@ -14,6 +14,7 @@ import { MenuLevel12Component } from './core/navigation-panel/menu-level12/menu-
 import { MenuLevel13Component } from './core/navigation-panel/menu-level13/menu-level13.component';
 import { MapsComponent } from './components/maps/maps/maps.component';
 import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
+import { MainPageComponent } from './components/main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PageNotFoundComponent } from './core/page-not-found/page-not-found.comp
     MenuLevel12Component,
     MenuLevel13Component,
     MapsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,
