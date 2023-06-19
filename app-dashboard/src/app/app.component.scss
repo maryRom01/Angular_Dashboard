@@ -1,22 +1,23 @@
 $height-600: 600px;
 
-.container {
+.app-container {
   height: 100%;
   width: 100%;
   font-family: Roboto, sans-serif;
   font-size: 14px;
 }
 
-.main-flex {
+.container-flex {
   min-height: $height-600;
   display: flex;
   flex-direction: row;
 }
 
 .nav-flex {
-  width: 14%;
+  width: 15%;
 }
 
 .main-flex {
-  width: auto;
+  margin-left: 1em;
+  width: 85%;
 }
