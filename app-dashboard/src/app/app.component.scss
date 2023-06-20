@@ -1,5 +1,18 @@
 $height-600: 600px;
 
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  border-style: none;
+}
+
 .app-container {
   height: 100%;
   width: 100%;
