@@ -8,6 +8,7 @@ import { ComponentsUiComponent } from './components/components-ui/components-ui.
 import { MapsComponent } from './components/maps/maps/maps.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { CoreModule } from './core/core.module';
+import { ConvertBytes } from './core/pipes/convert-bytes.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CoreModule } from './core/core.module';
     TablesComponent,
     ComponentsUiComponent,
     MapsComponent,
-    MainPageComponent
+    MainPageComponent,
+    ConvertBytes
   ],
   imports: [
     BrowserModule,
