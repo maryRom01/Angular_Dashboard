@@ -7,7 +7,7 @@ import { MapsComponent } from './components/maps/maps/maps.component';
 import { MenuLevel11Component } from './core/navigation-panel/menu-level11/menu-level11.component';
 import { MenuLevel12Component } from './core/navigation-panel/menu-level12/menu-level12.component';
 import { MenuLevel13Component } from './core/navigation-panel/menu-level13/menu-level13.component';
-import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
 
 const routes: Routes = [

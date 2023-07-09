@@ -8,7 +8,7 @@ import { NavigationPanelComponent } from './navigation-panel/navigation-panel.co
 import { MenuLevel11Component } from './navigation-panel/menu-level11/menu-level11.component';
 import { MenuLevel12Component } from './navigation-panel/menu-level12/menu-level12.component';
 import { MenuLevel13Component } from './navigation-panel/menu-level13/menu-level13.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PageNotFoundComponent } from '../shared/page-not-found/page-not-found.component';
 import { CoreComponent } from './core.component';
 
 @NgModule({
