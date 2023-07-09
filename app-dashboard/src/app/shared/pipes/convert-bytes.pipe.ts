@@ -6,6 +6,7 @@ import { Pipe, PipeTransform } from "@angular/core";
 
 export class ConvertBytes implements PipeTransform {
   number1000 = 1000;
+  defaultFractionalPart = 2;
 
   returnPow(power: number) {
     return Math.pow(this.number1000, power);
@@ -15,12 +16,13 @@ export class ConvertBytes implements PipeTransform {
     return this.returnPow(power) * this.number1000 - 1;
   }
 
-  returnResultFixed(value: number, power: number, fractionalPart: number) {
-    return (value / this.returnPow(power)).toFixed(fractionalPart);
+  returnResultFixed(value: number, power: number, fractionalPart?: number) {
+    return (value / this.returnPow(power)).toFixed(fractionalPart || this.defaultFractionalPart);
   }
 
-  returnMetric(power: number, shorthand: boolean) {
+  returnMetric(power: number, shorthand?: boolean) {
     switch(power) {
+      case 0: return (shorthand)? 'B' : 'bytes';
       case 1: return (shorthand)? 'KB' : 'kilobytes';
       case 2: return (shorthand)? 'MB' : 'megabytes';
       case 3: return (shorthand)? 'GB' : 'gigabytes';
@@ -34,8 +36,10 @@ export class ConvertBytes implements PipeTransform {
     }
   }
 
-  transform(value: number, fractionalPart: number, shorthand: boolean) {
-    if (value <= this.returnMaxInInterval(1)) {
+  transform(value: number, fractionalPart?: number, shorthand?: boolean) {
+    if (value <= this.number1000) {
+      return `${this.returnResultFixed(value, 0, fractionalPart)} ${this.returnMetric(0, shorthand)}`;
+    } else if (value <= this.returnMaxInInterval(1)) {
       return `${this.returnResultFixed(value, 1, fractionalPart)} ${this.returnMetric(1, shorthand)}`;
     } else if ( value <= this.returnMaxInInterval(2)) {
       return `${this.returnResultFixed(value, 2, fractionalPart)} ${this.returnMetric(2, shorthand)}`;
