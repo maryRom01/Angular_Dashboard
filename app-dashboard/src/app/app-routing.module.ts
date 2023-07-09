@@ -8,13 +8,13 @@ const routes: Routes = [
   { path: 'tables', loadChildren: () => import('./components/tables/tables.module').then(m => m.TablesModule)},
   { path: 'maps', loadChildren: () => import('./components/maps/maps.module').then(m => m.MapsModule)},
 
-  // { path: '', children: [
-  //   { path: 'menu-level11', component: MenuLevel11Component },
-  //   { path: 'menu-level12', component: MenuLevel12Component },
-  //   { path: 'menu-level13', component: MenuLevel13Component }
-  // ]},
-  { path: '', redirectTo: '/main-page', pathMatch: 'full' }
-  // { path: '**', component: PageNotFoundComponent }
+  { path: '', children: [
+    { path: 'menu-level11', loadChildren: () => import('./components/navigation/menu-level11/menu-level11.module').then(m => m.MenuLevel11Module)},
+    { path: 'menu-level12', loadChildren: () => import('./components/navigation/menu-level12/menu-level12.module').then(m => m.MenuLevel12Module)},
+    { path: 'menu-level13', loadChildren: () => import('./components/navigation/menu-level13/menu-level13.module').then(m => m.MenuLevel13Module)}
+  ]},
+  { path: '', redirectTo: '/main-page', pathMatch: 'full'},
+  { path: '**', loadChildren: () => import('./components/page-not-found/page-not-found.module').then(m => m.PageNotFoundModule)}
 ];
 
 @NgModule({

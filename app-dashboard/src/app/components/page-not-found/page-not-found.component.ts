@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./page-not-found.component.scss']
 })
 export class PageNotFoundComponent {
-
+  imagePath = "assets/img/image4041.jpg";
+  routerLinkVariable = "/dashboard";
 }

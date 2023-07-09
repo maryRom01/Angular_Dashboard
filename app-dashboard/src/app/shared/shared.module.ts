@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ConvertBytes } from './pipes/convert-bytes.pipe';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
-    ConvertBytes,
-    PageNotFoundComponent
+    ConvertBytes
   ],
   imports: [
     CommonModule
@@ -14,8 +12,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   providers: [],
   bootstrap: [  ],
   exports: [
-    ConvertBytes,
-    PageNotFoundComponent
+    ConvertBytes
   ]
 })
 export class SharedModule { }
