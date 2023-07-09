@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavigationPanelLink } from 'src/app/interfaces/navigationPanel';
+import { NavigationPanelLink } from 'src/app/components/menu-level1/interfaces/navigationPanel';
 
 @Component({
   selector: 'dsh-navigation-panel',
