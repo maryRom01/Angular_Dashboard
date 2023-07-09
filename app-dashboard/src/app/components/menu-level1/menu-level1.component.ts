@@ -3,10 +3,10 @@ import { NavigationPanelLink } from 'src/app/interfaces/navigationPanel';
 
 @Component({
   selector: 'dsh-navigation-panel',
-  templateUrl: './navigation-panel.component.html',
-  styleUrls: ['./navigation-panel.component.scss']
+  templateUrl: './menu-level1.component.html',
+  styleUrls: ['./menu-level1.component.scss']
 })
-export class NavigationPanelComponent {
+export class MenuLevel1Component {
   visible: boolean = false;
   navLinks: NavigationPanelLink[] = [
     { name: 'Dashboard', path: '/dashboard', subMenu: false },

@@ -3,10 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ComponentsUiComponent } from './components/components-ui/components-ui.component';
 import { TablesComponent } from './components/tables/tables.component';
-import { MapsComponent } from './components/maps/maps/maps.component';
-import { MenuLevel11Component } from './core/navigation-panel/menu-level11/menu-level11.component';
-import { MenuLevel12Component } from './core/navigation-panel/menu-level12/menu-level12.component';
-import { MenuLevel13Component } from './core/navigation-panel/menu-level13/menu-level13.component';
+import { MapsComponent } from './components/maps/maps.component';
+import { MenuLevel11Component } from './components/menu-level1/menu-level11/menu-level11.component';
+import { MenuLevel12Component } from './components/menu-level1/menu-level12/menu-level12.component';
+import { MenuLevel13Component } from './components/menu-level1/menu-level13/menu-level13.component';
 import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
 
