@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { ComponentsUiComponent } from './components-ui.component';
+import { ComponentsUIRoutingModule } from './components-ui-routing.module';
 
 @NgModule({
   declarations: [
     ComponentsUiComponent
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
+    ComponentsUIRoutingModule
   ],
   providers: [],
   bootstrap: [ ComponentsUiComponent ],

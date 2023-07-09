@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard.component';
+import { DashboardRoutingModule } from './dashboard-routing.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
@@ -8,7 +9,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
     DashboardComponent
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
+    DashboardRoutingModule,
     SharedModule
   ],
   providers: [],

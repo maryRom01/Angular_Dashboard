@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { NavigationPanelLink } from 'src/app/components/menu-level1/interfaces/navigationPanel';
+import { NavigationPanelLink } from 'src/app/components/navigation/interfaces/navigationPanel';
 
 @Component({
   selector: 'dsh-navigation-panel',
-  templateUrl: './menu-level1.component.html',
-  styleUrls: ['./menu-level1.component.scss']
+  templateUrl: './navigation.component.html',
+  styleUrls: ['./navigation.component.scss']
 })
-export class MenuLevel1Component {
+export class NavigationPanel {
   visible: boolean = false;
   navLinks: NavigationPanelLink[] = [
     { name: 'Dashboard', path: '/dashboard', subMenu: false },

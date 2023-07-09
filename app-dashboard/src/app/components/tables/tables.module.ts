@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { TablesComponent } from './tables.component';
+import { TablesRoutingModule } from './tables-routing.module';
 
 @NgModule({
   declarations: [
     TablesComponent
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
+    TablesRoutingModule
   ],
   providers: [],
   bootstrap: [ TablesComponent ],

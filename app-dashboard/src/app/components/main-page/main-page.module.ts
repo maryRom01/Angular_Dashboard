@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { MainPageComponent } from './main-page.component';
-import { AppRoutingModule } from 'src/app/app-routing.module';
+import { MainPageRoutingModule } from './main-page-routing.module';
 
 @NgModule({
   declarations: [
     MainPageComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    CommonModule,
+    MainPageRoutingModule
   ],
   providers: [],
   bootstrap: [ MainPageComponent ],

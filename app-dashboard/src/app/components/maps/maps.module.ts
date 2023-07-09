@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { MapsComponent } from './maps.component';
+import { MapsRoutingModule } from './maps-routing.module';
 
 @NgModule({
   declarations: [
     MapsComponent
   ],
   imports: [
-    BrowserModule
+    CommonModule,
+    MapsRoutingModule
   ],
   providers: [],
   bootstrap: [ MapsComponent ],

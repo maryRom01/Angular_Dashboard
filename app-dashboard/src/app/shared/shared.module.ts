@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { ConvertBytes } from './pipes/convert-bytes.pipe';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
@@ -9,7 +9,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     PageNotFoundComponent
   ],
   imports: [
-    BrowserModule
+    CommonModule
   ],
   providers: [],
   bootstrap: [  ],
