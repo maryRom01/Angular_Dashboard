@@ -41,7 +41,7 @@
             </div>
             <p>We are unable to find the page<br>you're looking for.</p>
             <div>
-                <button type="button" [routerLink]="routerLinkVariable">Back to Home Page</button>
+                <button type="button" [routerLink]="routerLinkVariable" [queryParams]="{nav: 'home', part: 'dashboard', page: '1'}">Back to Home Page</button>
             </div>
         </section>
     </main>
