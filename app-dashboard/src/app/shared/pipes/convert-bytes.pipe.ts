@@ -21,19 +21,31 @@ export class ConvertBytes implements PipeTransform {
   }
 
   returnMetric(power: number, shorthand?: boolean) {
-    switch(power) {
-      case 0: return (shorthand)? 'B' : 'bytes';
-      case 1: return (shorthand)? 'KB' : 'kilobytes';
-      case 2: return (shorthand)? 'MB' : 'megabytes';
-      case 3: return (shorthand)? 'GB' : 'gigabytes';
-      case 4: return (shorthand)? 'TB' : 'terabytes';
-      case 5: return (shorthand)? 'PB' : 'petabytes';
-      case 6: return (shorthand)? 'ZB' : 'zettabytes';
-      case 7: return (shorthand)? 'YB' : 'yottabytes';
-      case 8: return (shorthand)? 'RB' : 'ronnabytes';
-      case 9: return (shorthand)? 'QB' : 'quettabytes';
-      default: return '';
-    }
+    let mapUppercase = new Map<number, string>([
+      [0, 'B'],
+      [1, 'KB'],
+      [2, 'MB'],
+      [3, 'GB'],
+      [4, 'TB'],
+      [5, 'PB'],
+      [6, 'ZB'],
+      [7, 'YB'],
+      [8, 'RB'],
+      [9, 'QB'],
+    ]);
+    let mapLowcase = new Map<number, string>([
+      [0, 'bytes'],
+      [1, 'kilobytes'],
+      [2, 'megabytes'],
+      [3, 'gigabytes'],
+      [4, 'terabytes'],
+      [5, 'petabytes'],
+      [6, 'zettabytes'],
+      [7, 'yottabytes'],
+      [8, 'ronnabytes'],
+      [9, 'quettabytes'],
+    ]);
+    return (shorthand)? mapUppercase.get(power) : mapLowcase.get(power);
   }
 
   transform(value: number, fractionalPart?: number, shorthand?: boolean) {
